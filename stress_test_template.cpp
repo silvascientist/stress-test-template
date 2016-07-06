@@ -31,8 +31,8 @@ int main()
     {                 // and no more than max_v distinct values, and then applies both algorithms to the array
         do
         {
-        size = rand() % max_s;
-        vals = rand() % max_v;
+        size = rand() % max_s + 1;
+        vals = rand() % max_v + 1;
         } while (size == 0 || vals == 0); // can't have arrays of size 0 or with 0 distinct elements
     
         vector<int> a(size);
