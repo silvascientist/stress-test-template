@@ -1,2 +1,2 @@
 # stress-test-template
-A template with which you can stress test your majority element code
+A template for stress testing majority element code. Written for an online class taken through Coursera.
