@@ -36,14 +36,14 @@ int main()
         } while (size == 0 || vals == 0); // can't have arrays of size 0 or with 0 distinct elements
     
         vector<int> a(size);
-        int coin_flip = rand() % 2;
-        if (coin_flip) // then there should be a maj_elt
+        int is_maj_elt = rand() % 2;
+        if (is_maj_elt) // then there should be a maj_elt
         {
-            int maj = rand() % vals;
+            int is_maj_elt = rand() % vals;
             for (int i = 0; i < size; i++)
             {
-                coin_flip = rand() % 3; // nonzero 2 out of 3 times - should give a maj_elt
-                if(coin_flip)           // and yes, this is a three-sided coin ;)
+                is_maj_elt = rand() % 3; // nonzero 2 out of 3 times - should give a majority element
+                if(is_maj_elt)           // and yes, this is a three-sided coin ;)
                     a[i] = maj;
                 else
                     a[i] = rand() % vals;
